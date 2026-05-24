@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer components {
+  .card {
+    /* background-color: rgba(255, 255, 255, 0.25); */
+    background-color: rgba(249, 243, 243, 0.25);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    box-shadow: 0 35px 35px rgba(0, 0, 0, 0.25);
+  }
+
+  .skill_bg{
+    /* background-color: rgb(105, 103, 103); */
+    background-color: rgb(165, 162, 162);
+    color: black;
+    font-weight: 500;
+    font-size: small;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project_bg{
+    background-color: rgb(126, 119, 119);
+    border-radius: 5px;
+    padding: 6px;
+    margin-bottom: 12px;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+}
